@@ -104,7 +104,7 @@
             this.callParent([
                 '<tpl if="this._getCollaboratorsCount(values) &gt; 0">',
                     '<a onclick="{[this._getOnClick(values)]}">',
-                        '<span class="predecessorsandsuccessors-cnt">{[this._getCollaboratorsCount(values)]}</span>',
+                        '<span class="collaborators-cnt">{[this._getCollaboratorsCount(values)]}</span>',
                     '</a>',
                 '</tpl>'
             ]);
@@ -144,6 +144,7 @@
             config.listViewConfig = Ext.merge({
                 addNewConfig: null,
                 gridConfig: {
+                    enableEditing: false,
                     storeConfig: {
                         context: config.context,
                         fetch: ['FirstName', 'LastName', 'EmailAddress']
@@ -664,8 +665,15 @@
 
 
     <style type="text/css">
-        .collaborators-popover-body .rui-left-right {
+        #collaborators-popover-body .rui-leftright {
   display: none;
+  height: 0px !important;
+}
+.rally-grid-cell-collaborators a {
+  cursor: pointer;
+}
+.collaborators-cnt {
+  color: #337ec6;
 }
 
     </style>
