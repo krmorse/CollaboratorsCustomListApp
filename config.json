@@ -1,0 +1,15 @@
+{
+    "name": "Custom List",
+    "className": "Rally.apps.customlist.CustomListApp",
+    "server": "https://rally1.rallydev.com",
+    "sdk": "2.1",
+    "javascript": [
+        "Settings.js",
+        "CollaboratorsTemplate.js",
+        "CollaboratorsPopover.js",
+        "CustomListApp.js"
+    ],
+    "css": [
+        "app.css"
+    ]
+}

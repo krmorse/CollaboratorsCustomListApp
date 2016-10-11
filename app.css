@@ -1,0 +1,12 @@
+#collaborators-popover-body .rui-leftright {
+  display: none;
+  height: 0px !important;
+}
+
+.rally-grid-cell-collaborators a {
+  cursor: pointer;
+}
+
+.collaborators-cnt {
+  color: #337ec6;
+}
